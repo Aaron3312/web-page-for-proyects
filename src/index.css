@@ -27,11 +27,10 @@ h1 {
   margin-left: 1rem;
 
 }
-
 .imgRaton {
   width: 30%;
   height: auto;
-  margin-top: -3rem;
+  margin-top: -2rem;
   margin-left: 1rem;
   transition: all 0.3s ease-in-out;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
@@ -81,4 +80,32 @@ h1 {
 
 .imgRaton:active {
   transform: scale(0.95);
+}
+
+.imgRaton.screaming {
+  animation: scream 0.1s linear infinite;
+}
+
+@keyframes scream {
+  0% { transform: translate(-2px, -2px) rotate(-1deg); }
+  25% { transform: translate(2px, 2px) rotate(1deg); }
+  50% { transform: translate(-2px, 2px) rotate(-1deg); }
+  75% { transform: translate(2px, -2px) rotate(1deg); }
+  100% { transform: translate(-2px, -2px) rotate(-1deg); }
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .imgRaton {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 1rem;
+  }
+  .titleName {
+    margin-left: 0;
+    text-align: center;
+  }
+
 }
