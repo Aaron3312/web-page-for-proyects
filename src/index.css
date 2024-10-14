@@ -13,6 +13,24 @@ code {
 }
 
 .titleName {
-  font-size: 2rem;
-  color: #282c34;
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-family: Calibre-SemiBold, sans-serif;
+  margin-top: -2rem;
+  margin-left: 4rem;
+  text-shadow: 0 15px 15px rgba(0, 0, 0, .16);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  margin-left: 1rem;
+
+}
+
+.imgRaton {
+  width: 30%;
+  height: 30%;
+  margin-top: -3rem;
+  margin-left: 1rem;
 }

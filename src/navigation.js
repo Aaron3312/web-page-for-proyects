@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
+import Portfolio from "./components/Portfolio";
+import CV from "./components/Cv.js";
+import Contact from "./components/Contact";
+import Home from "./components/Home";
 
 function CustomTabPanel(props) {
 	const { children, value, index, ...other } = props;
@@ -48,19 +52,19 @@ export default function BasicTabs() {
 					onChange={handleChange}
 					aria-label="basic tabs example"
 				>
-					<Tab label="Item One" {...a11yProps(0)} />
-					<Tab label="Item Two" {...a11yProps(1)} />
-					<Tab label="Item Three" {...a11yProps(2)} />
+					<Tab label="Home" {...a11yProps(0)} />
+					<Tab label="Contact" {...a11yProps(1)} />
+					<Tab label="Cv" {...a11yProps(2)} />
 				</Tabs>
 			</Box>
 			<CustomTabPanel value={value} index={0}>
-				Item One
+				<Home />
 			</CustomTabPanel>
 			<CustomTabPanel value={value} index={1}>
-				Item Two
+				<Contact />
 			</CustomTabPanel>
 			<CustomTabPanel value={value} index={2}>
-				Item Three
+				<CV />
 			</CustomTabPanel>
 		</Box>
 	);
